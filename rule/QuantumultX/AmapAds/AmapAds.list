@@ -1,0 +1,13 @@
+# NAME: AmapAds
+# DESC: 高德地图开屏/广告域名（不含地图导航主接口 m5.amap.com / m5-x.amap.com）
+# AUTHOR: aict666
+# REPO: https://github.com/aict666/rule_hub
+
+HOST-SUFFIX,optimus-ads.amap.com,REJECT
+HOST,optimus-ads.amap.com.w.alikunlun.com,REJECT
+HOST-SUFFIX,adiu.amap.com,REJECT
+HOST-SUFFIX,logs.amap.com,REJECT
+HOST-SUFFIX,dualstack-logs.amap.com,REJECT
+HOST,free-aos-cdn-image.amap.com,REJECT
+HOST,www.qchannel01.cn,REJECT
+HOST,i.qchannel03.cn,REJECT

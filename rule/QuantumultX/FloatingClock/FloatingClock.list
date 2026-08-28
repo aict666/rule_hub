@@ -1,0 +1,44 @@
+# NAME: FloatingClock
+# DESC: 悬浮时钟 GroMore/穿山甲/优量汇/Sigmob/百度联盟/快手等广告 SDK
+# AUTHOR: aict666
+# REPO: https://github.com/aict666/rule_hub
+
+HOST-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+HOST-SUFFIX,pangolin-sdk-toutiao1.com,REJECT
+HOST-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+HOST-SUFFIX,pglstatp-toutiao.com,REJECT
+HOST-SUFFIX,ctobsnssdk.com,REJECT
+HOST-SUFFIX,bytescm.com,REJECT
+HOST-SUFFIX,zijieapi.com,REJECT
+HOST-SUFFIX,volces.com,REJECT
+HOST-SUFFIX,gdt.qq.com,REJECT
+HOST-SUFFIX,ugdtimg.com,REJECT
+HOST,sdk.e.qq.com,REJECT
+HOST,sdkquic.e.qq.com,REJECT
+HOST,tdid.m.qq.com,REJECT
+HOST-SUFFIX,sigmob.cn,REJECT
+HOST-SUFFIX,mobads.baidu.com,REJECT
+HOST-SUFFIX,mobads-logs.baidu.com,REJECT
+HOST,mobads-pre-config.cdn.bcebos.com,REJECT
+HOST,bgg.baidu.com,REJECT
+HOST,wn.pos.baidu.com,REJECT
+HOST,open.e.kuaishou.com,REJECT
+HOST-SUFFIX,kuaishouzt.com,REJECT
+HOST-SUFFIX,adkwai.com,REJECT
+HOST,gdfp.gifshow.com,REJECT
+HOST-SUFFIX,umeng.com,REJECT
+HOST-SUFFIX,beizi.biz,REJECT
+HOST-SUFFIX,tuia.cn,REJECT
+HOST-SUFFIX,1rtb.net,REJECT
+HOST-SUFFIX,1rtb.com,REJECT
+HOST-SUFFIX,adintl.cn,REJECT
+HOST-SUFFIX,zhangyuyidong.cn,REJECT
+HOST-SUFFIX,hubcloud.com.cn,REJECT
+HOST-SUFFIX,medproad.com,REJECT
+HOST-SUFFIX,xlqeai.com,REJECT
+HOST-SUFFIX,ndcjl.com,REJECT
+HOST-SUFFIX,magicacid.cn,REJECT
+HOST-SUFFIX,app-ads-services.com,REJECT
+HOST-SUFFIX,app-analytics-services.com,REJECT
+HOST,impdsp.meituan.com,REJECT
+HOST,clickdsp.meituan.com,REJECT

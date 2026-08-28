@@ -1,0 +1,44 @@
+# NAME: FloatingClock
+# DESC: 悬浮时钟 GroMore/穿山甲/优量汇/Sigmob/百度联盟/快手等广告 SDK
+# AUTHOR: aict666
+# REPO: https://github.com/aict666/rule_hub
+
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,bytescm.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,ugdtimg.com
+DOMAIN,sdk.e.qq.com
+DOMAIN,sdkquic.e.qq.com
+DOMAIN,tdid.m.qq.com
+DOMAIN-SUFFIX,sigmob.cn
+DOMAIN-SUFFIX,mobads.baidu.com
+DOMAIN-SUFFIX,mobads-logs.baidu.com
+DOMAIN,mobads-pre-config.cdn.bcebos.com
+DOMAIN,bgg.baidu.com
+DOMAIN,wn.pos.baidu.com
+DOMAIN,open.e.kuaishou.com
+DOMAIN-SUFFIX,kuaishouzt.com
+DOMAIN-SUFFIX,adkwai.com
+DOMAIN,gdfp.gifshow.com
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,beizi.biz
+DOMAIN-SUFFIX,tuia.cn
+DOMAIN-SUFFIX,1rtb.net
+DOMAIN-SUFFIX,1rtb.com
+DOMAIN-SUFFIX,adintl.cn
+DOMAIN-SUFFIX,zhangyuyidong.cn
+DOMAIN-SUFFIX,hubcloud.com.cn
+DOMAIN-SUFFIX,medproad.com
+DOMAIN-SUFFIX,xlqeai.com
+DOMAIN-SUFFIX,ndcjl.com
+DOMAIN-SUFFIX,magicacid.cn
+DOMAIN-SUFFIX,app-ads-services.com
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN,impdsp.meituan.com
+DOMAIN,clickdsp.meituan.com

@@ -1,0 +1,18 @@
+# NAME: BaiduMapAds
+# DESC: 百度地图开屏/联盟广告域名（不含地图导航主接口）
+# AUTHOR: aict666
+# REPO: https://github.com/aict666/rule_hub
+
+HOST,afd.baidu.com,REJECT
+HOST,afdconf.baidu.com,REJECT
+HOST,nadvideo2.baidu.com,REJECT
+HOST,als.baidu.com,REJECT
+HOST,mobads.baidu.com,REJECT
+HOST,mobads-logs.baidu.com,REJECT
+HOST-SUFFIX,adscdn.baidu.com,REJECT
+HOST-SUFFIX,cpro.baidu.com,REJECT
+HOST-SUFFIX,pos.baidu.com,REJECT
+HOST,map-mobile-opnimg.cdn.bcebos.com,REJECT
+HOST,integralwall.baidu.com,REJECT
+HOST-SUFFIX,advlion.com,REJECT
+HOST,i.qchannel03.cn,REJECT

@@ -1,0 +1,84 @@
+#!name=AICT 去广告
+#!desc=AICT 应用去广告合集（悬浮时钟、百度地图、高德地图）。需开启 MITM、脚本、复写。
+#!author=aict666
+#!homepage=https://github.com/aict666/rule_hub
+#!date=2026-08-28 10:46:32
+
+[Rule]
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,bytescm.com,REJECT
+DOMAIN-SUFFIX,zijieapi.com,REJECT
+DOMAIN-SUFFIX,volces.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,ugdtimg.com,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,sdkquic.e.qq.com,REJECT
+DOMAIN,tdid.m.qq.com,REJECT
+DOMAIN-SUFFIX,sigmob.cn,REJECT
+DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,mobads-logs.baidu.com,REJECT
+DOMAIN,mobads-pre-config.cdn.bcebos.com,REJECT
+DOMAIN,bgg.baidu.com,REJECT
+DOMAIN,wn.pos.baidu.com,REJECT
+DOMAIN,open.e.kuaishou.com,REJECT
+DOMAIN-SUFFIX,kuaishouzt.com,REJECT
+DOMAIN-SUFFIX,adkwai.com,REJECT
+DOMAIN,gdfp.gifshow.com,REJECT
+DOMAIN-SUFFIX,umeng.com,REJECT
+DOMAIN-SUFFIX,beizi.biz,REJECT
+DOMAIN-SUFFIX,tuia.cn,REJECT
+DOMAIN-SUFFIX,1rtb.net,REJECT
+DOMAIN-SUFFIX,1rtb.com,REJECT
+DOMAIN-SUFFIX,adintl.cn,REJECT
+DOMAIN-SUFFIX,zhangyuyidong.cn,REJECT
+DOMAIN-SUFFIX,hubcloud.com.cn,REJECT
+DOMAIN-SUFFIX,medproad.com,REJECT
+DOMAIN-SUFFIX,xlqeai.com,REJECT
+DOMAIN-SUFFIX,ndcjl.com,REJECT
+DOMAIN-SUFFIX,magicacid.cn,REJECT
+DOMAIN-SUFFIX,app-ads-services.com,REJECT
+DOMAIN-SUFFIX,app-analytics-services.com,REJECT
+DOMAIN,impdsp.meituan.com,REJECT
+DOMAIN,clickdsp.meituan.com,REJECT
+DOMAIN,afd.baidu.com,REJECT
+DOMAIN,afdconf.baidu.com,REJECT
+DOMAIN,nadvideo2.baidu.com,REJECT
+DOMAIN,als.baidu.com,REJECT
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN,mobads-logs.baidu.com,REJECT
+DOMAIN-SUFFIX,adscdn.baidu.com,REJECT
+DOMAIN-SUFFIX,cpro.baidu.com,REJECT
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
+DOMAIN,map-mobile-opnimg.cdn.bcebos.com,REJECT
+DOMAIN-SUFFIX,optimus-ads.amap.com,REJECT
+DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
+DOMAIN-SUFFIX,adiu.amap.com,REJECT
+DOMAIN-SUFFIX,logs.amap.com,REJECT
+DOMAIN-SUFFIX,dualstack-logs.amap.com,REJECT
+DOMAIN,free-aos-cdn-image.amap.com,REJECT
+DOMAIN,www.qchannel01.cn,REJECT
+DOMAIN,i.qchannel03.cn,REJECT
+DOMAIN-SUFFIX,advlion.com,REJECT
+DOMAIN,integralwall.baidu.com,REJECT
+
+[Rewrite]
+^https?:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.(jpg|mp4) reject
+^https?:\/\/dss0\.bdstatic\.com\/-0U0bnSm1A5BphGlnYG\/ reject
+^https?:\/\/(?:ecom\.map\.baidu\.com|(?:\d+\.){3}\d+)\/ad-ops\/ reject
+^https?:\/\/(?:[\w.-]+\.amap\.com|(?:\d+\.){3}\d+)\/ws\/asa\/ads_attribution reject
+^https?:\/\/(?:[\w.-]+\.amap\.com|(?:\d+\.){3}\d+)\/uploadimg\/\w+\.gif reject
+^https?:\/\/(?:ai\.amap\.com|(?:\d+\.){3}\d+)\/v\d\/ai_rec\/ reject-dict
+
+[Script]
+http-response ^https?:\/\/(?:newclient\.map\.baidu\.com|(?:\d+\.){3}\d+)\/client\/crossmarketing script-path=https://raw.githubusercontent.com/aict666/rule_hub/master/rewrite/Surge/Advertising/baidumap.js, requires-body=true, timeout=30, tag=百度地图开屏JSON, binary-body-mode=true
+http-response ^https?:\/\/(?:newclient\.map\.baidu\.com|(?:\d+\.){3}\d+)\/client\/phpui2\/\?qt=ads script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/baidumap.js, requires-body=true, timeout=30, tag=百度地图开屏, binary-body-mode=true
+http-response ^https?:\/\/(?:[\w.-]+\.amap\.com|(?:\d+\.){3}\d+)\/ws\/(?:aos|valueadded)\/alimama\/splash_screen(?:_rt)? script-path=https://raw.githubusercontent.com/aict666/rule_hub/master/rewrite/Surge/Advertising/amap.js, requires-body=true, timeout=30, tag=高德开屏, binary-body-mode=true
+http-response ^https?:\/\/(?:[\w.-]+\.amap\.com|(?:\d+\.){3}\d+)\/ws\/(?:faas\/amap-navigation\/main-page|shield\/frogserver\/aocs|message\/notice\/list) script-path=https://raw.githubusercontent.com/aict666/rule_hub/master/rewrite/Surge/Advertising/amap.js, requires-body=true, timeout=30, tag=高德首页
+http-response ^https?:\/\/(?:[\w.-]+\.amap\.com|(?:\d+\.){3}\d+)\/ws\/(?:shield\/(?:dsp\/profile\/index\/nodefaas|search\/(?:new_hotword|nearbyrec_smart))|promotion-web\/resource|msgbox\/pull) script-path=https://raw.githubusercontent.com/aict666/rule_hub/master/rewrite/Surge/Advertising/amap.js, requires-body=true, timeout=30, tag=高德信息流
+
+[MITM]
+hostname = newclient.map.baidu.com, ecom.map.baidu.com, afd.baidu.com, dss0.bdstatic.com, m5.amap.com, m5-x.amap.com, m5-zb.amap.com, m5*.amap.com, sns.amap.com, ai.amap.com, center.amap.com, amap-aos-info-nogw.amap.com, optimus-ads.amap.com
