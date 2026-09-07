@@ -8,9 +8,6 @@ HOST-SUFFIX,pangolin-sdk-toutiao1.com,REJECT
 HOST-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
 HOST-SUFFIX,pglstatp-toutiao.com,REJECT
 HOST-SUFFIX,ctobsnssdk.com,REJECT
-HOST-SUFFIX,bytescm.com,REJECT
-HOST-SUFFIX,zijieapi.com,REJECT
-HOST-SUFFIX,volces.com,REJECT
 HOST-SUFFIX,gdt.qq.com,REJECT
 HOST-SUFFIX,ugdtimg.com,REJECT
 HOST,sdk.e.qq.com,REJECT
