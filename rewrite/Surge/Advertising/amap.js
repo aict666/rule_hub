@@ -94,6 +94,7 @@ const splashKeys = new Set([
   "splash",
   "splash_list",
   "splashlist",
+  "custom_list",
   "material",
   "materials",
   "creative",
